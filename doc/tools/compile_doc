@@ -1,0 +1,4 @@
+release=$1
+
+(markdown-include partials/markdown.json && pandoc -s -c ./style.css ./release.md -o $release.html)
+open $release.html

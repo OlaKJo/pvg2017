@@ -1,0 +1,3 @@
+Start nbr; Name; Total time; Start time; Finish time
+1; Anders Asson; 01.23.34; 12.00.00; 13.23.34
+2; Bengt Bsson; 01.14.16; 12.01.00; 13.15.16

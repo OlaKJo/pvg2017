@@ -1,0 +1,4 @@
+{
+    "build" : "./release.md",
+    "files" : ["./partials/release_template.md"]
+}

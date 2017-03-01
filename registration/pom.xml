@@ -1,0 +1,49 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>team03</groupId>
+    <artifactId>enduro</artifactId>
+    <version>1.0</version>
+  </parent>
+
+  <artifactId>registration</artifactId>
+
+  <build>
+    <sourceDirectory>../src</sourceDirectory>
+    <testSourceDirectory>../src/main/test</testSourceDirectory>
+    <testResources>
+        <testResource>
+            <directory>../src/test/java</directory>
+        </testResource>
+    </testResources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-jar-plugin</artifactId>
+	<version>2.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>main.java.registration.view.RegistrationApplication</mainClass>
+            </manifest>
+                    <manifestEntries>
+             <Class-Path>.</Class-Path>
+                    </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.2-beta-4</version>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

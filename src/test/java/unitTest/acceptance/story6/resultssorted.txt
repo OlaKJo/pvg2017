@@ -1,0 +1,6 @@
+Plac; StartNumber; Name; Total time
+1; 1; Anders Asson; --.--.--
+2; 2; Bengt Bsson; --.--.--
+3; 3; Chris Csson; 01.03.06; Several finish times? 13.07.08
+4; 4; David Dsson; 01.09.07; Several start times? 12.12.00
+; 5; Erik Esson; 00.12.07; Impossible total time?

@@ -1,0 +1,10 @@
+/bin/
+/target/
+*/target/
+
+/src/test/java/unitTest/result.txt
+/src/test/java/unitTest/resultsorted.txt
+/registered_times/
+
+/doc/release.md
+/build/

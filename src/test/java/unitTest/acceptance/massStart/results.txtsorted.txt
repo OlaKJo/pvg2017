@@ -1,0 +1,6 @@
+Plac; StartNr; Name; Total time
+1; 1; Anders Asson; 00.30.00
+2; 2; Bengt Bsson; 00.41.00
+3; 3; Chris Csson; 00.42.00
+4; 4; David Dsson; 00.43.00
+5; 5; Erik Esson; 00.44.00

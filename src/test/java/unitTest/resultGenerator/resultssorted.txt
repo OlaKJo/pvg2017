@@ -1,0 +1,3 @@
+Plac; ; #Lap; Total time; Lap time 1; Lap time 2
+1; 2; Name 2; 2; 05.00.00; 04.00.00; 01.00.00
+2; 1; Name 1; 1; 02.00.00; 02.00.00; 

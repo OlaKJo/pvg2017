@@ -1,0 +1,4 @@
+Start nbr; Name; Total time; Start time; Finish time
+1; Name 1; 02.02.02; 11.11.11; 13.13.13
+2; Name 2; 04.04.04; 12.12.12; 16.16.16
+2; Name 3; 00.01.00; 12.12.12; 12.13.12; Impossible total time?

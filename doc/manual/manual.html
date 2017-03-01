@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Användarmanual Enduro Race System</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+	<style type="text/css">
+		.tab { margin-left: 40px; }
+		.tab2 { margin-left: 80px; }
+        .box {word-wrap: break-word; width: 50px;}
+	</style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#main">
+					Enduro
+				</a>
+			</li>
+			<li>
+				<a href="#intro">Intro</a>
+			</li>
+			<li>
+				<a href="#installation">Installation</a>
+			</li>
+			<li>
+				<a href="#marathon_race">Maratonlopp</a>
+			</li>
+			<li>
+				<a href="#lap_race">Varvlopp</a>
+			</li>
+      <li>
+				<a href="#resultgeneration">Resultatgenerering</a>
+			</li>
+			<!-- <li>
+				<a href="#stage_race">Etapplopp</a>
+			</li> -->
+		</ul>
+	</div>
+	<!-- /#sidebar-wrapper -->
+
+    <!-- MAIN_INDEX -->
+    <div id="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <header>
+                       <h1 id="some_id">Användarmanual Enduro Race System</h1>
+                       <img src="enduro.jpg" alt="Enduro" style="width:800px;height:600px;">
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- END_MAIN_INDEX -->
+
+	        <!-- INTRODUCTION -->
+        <div id="intro">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Introduktion</h1>
+                        <p>Detta system är framtaget för Enduro Race och används för att samla in tider samt beräkna resultat. Uppe till vänster ser du alla rubriker. Klicka på en rubrik för att gå till önskat stycke.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> </hr>
+        <!-- END_INTRODUCTION -->
+
+        <!-- INSTALLATION -->
+        <div id="installation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Installation</h1>
+                        <h3 class="tab">Systemkrav</h3>
+							<ul class="tab">
+								<li>En dator</li>
+								<li>Java version 8</li>
+								<li>Operativ system som kan köra Java 8, se https://www.java.com/en/download/help/sysreq.xml </li>
+							</ul>
+                        <h3 class="tab">Föranmälan av deltagare</h3>
+						<p class="tab">Textfil för föranmälan av deltare är viktig. Denna fil måste placeras i rätt fil enligt er <a href="#resultgeneration">konfiguration</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> </hr>
+        <!-- END_INSTALLATION -->
+
+        <!-- MARATHON -->
+        <div id="marathon_race">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Maratonlopp</h1>
+                            <p>Vid ett marathonlopp finns det en startpunkt och en slutpunkt. Registrera tider för båda punkterna för alla deltagare.</p>
+                        <h3>Registrering</h3>
+                            <p> Kör registreringsprogrammet genom terminalen:
+                              <code style="display: block;">java -jar registration-1.0.jar</code>
+                            <h4 class="tab">Enkel start</h4>
+                            <p class="tab">
+                              <ul class="tab2">
+                                    <li> Specificera att det är en <b>start</b>station genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Start</b>.</li>
+                                    <li> Välj <b>Station ID</b> till valfritt unikt stationsnummer. </li>
+                                    <li> Klicka sedan på <b>Start Registration</b> för att påbörja registreringen.</li>
+                                    <li> Fyll i <b>Start Number</b> med en deltagares unika startnummer.</li>
+                                    <li> Klicka på <b>Register</b> för att registrera deltagaren vid denna tidpunkt.</li>
+                                    <li> Vid lyckad registrering kommer den registrerade tiden synas i listan utav de fem senaste registreringarna.</li>
+                             </ul>
+                           </p>
+
+                        <h4 class="tab">Masstart</h4>
+                            <p class="tab">
+                                <ul class="tab2">
+                                  <li> Specificera att det är en <b>start</b>station genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Start</b>.</li>
+                                  <li> Välj <b>Station ID</b> till valfritt unikt stationsnummer. </li>
+                                  <li> Tryck på knappen <b>Masstart</b>, detta ger alla deltagare samma starttid.</li>
+                              </ul>
+                            </p>
+                        <h4 class="tab">Slutregistrering</h4>
+                            <p class="tab">
+                              <ul class="tab2">
+                                  <li> Specificera att det är en <b>slut</b>station genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Finish (or lap time)</b>.</li>
+                                  <li> Välj <b>Station ID</b> till valfritt unikt stationsnummer. </li>
+                                  <li> Klicka sedan på <b>Start Registration</b> för att påbörja registreringen.</li>
+                                  <li> Fyll i <b>Start Number</b> med en deltagares unika startnummer.</li>
+                                  <li> Klicka på <b>Register</b> för att registrera deltagaren vid denna tidpunkt.</li>
+                                  <li> Vid lyckad registrering kommer den registrerade tiden synas i listan utav de fem senaste registreringarna.</li>
+                                  <ul class="tab3">
+                                    <h4><b> Förregistrering </b></h4>
+                                    <li>Om du behöver förregistrera, klicka på knappen <b>register</b> utan att fylla i något startnummer</li>
+                                    <li>Den förregistrerade tiden kommer nu synas under <b>Pre-registrations</b></li>
+                                    <li>Fyll i startnummer för den förregistrerade tiden</li>
+                                    <li>Tryck på <b>save</b> för att spara tiden eller <b>clear</b> för att förkasta den förregisterade tiden</li>
+                                    <li> <b>Obeservera</b>, du kan endast spara undan en förregistrerad tid åt gången</li>
+                                  </ul>
+                           </ul>
+                         </p>
+
+                     </div>
+                </div>
+            </div>
+        </div>
+        <hr> </hr>
+        <!-- END_MARATHON -->
+
+        <!-- LAP_RACE -->
+        <div id="lap_race">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <h1>Varvlopp</h1>
+        							<p>
+                          Varvloppet kan beskrivas som en sekvens av marathonlopp där den sista registrerade varvtiden representerar den slutgiltiga sluttiden.
+                      </p>
+                        <h3>Registrering</h3>
+							<p>Kör registreringsprogrammet genom terminalen:</p>
+              <code style="display: block;">java -jar registration-1.0.jar</code>
+              <h4 class="tab">Enkel start</h4>
+              <p class="tab">
+                <ul class="tab2">
+                      <li> Specificera att det är en <b>start</b>station genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Start</b>.</li>
+                      <li> Välj "Station ID" till valfritt unikt stationsnummer. </li>
+                      <li> Klicka sedan på <b>Start Registration</b> för att påbörja registreringen.</li>
+                      <li> Fyll i <b>Start Number</b> med en deltagares unika startnummer.</li>
+                      <li> Klicka på <b>Register</b> för att registrera deltagaren vid denna tidpunkt.
+                      <li> Vid lyckad registrering kommer den registrerade tiden synas i listan utav de fem senaste registreringarna.
+                      </p>
+               </ul>
+
+          <h4 class="tab">Masstart</h4>
+              <p class="tab">
+                  <ul class="tab2">
+                <li> Specificera att det är en <b>start</b>station genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Start</b>.</li>
+                <li> Välj "Station ID" till valfritt unikt stationsnummer. </li>
+                <li> Tryck på knappen <b>Masstart</b>, detta ger alla deltagare samma starttid </li>
+                </p>
+                </ul>
+          <h4 class="tab">Varvtidregistrering och slutregistrering</h4>
+              <p class="tab">
+                <ul class="tab2">
+                    <li> Specificera att det är en <b>slut</b>station (eller varvstation) genom att använda drop-down-menyn <b>Station Type</b> och välja <b>Finish (or lap time)</b>.</li>
+                    <li> Välj <b>Station ID</b> till valfritt unikt stationsnummer. </li>
+                    <li> Klicka sedan på "Start Registration" för att påbörja registreringen.</li>
+                    <li> Fyll i <b>Start Number</b> med en deltagares unika startnummer.</li>
+                    <li> Klicka på <b>Register</b> för att registrera deltagaren vid denna tidpunkt.
+                    <li> Vid lyckad registrering kommer den registrerade tiden synas i listan utav de fem senaste registreringarna.
+                    <li> För att registrera varvtider använd dig av flera sluttider, endast den sista sluttiden kommer representera den faktiska sluttiden.
+                    </p>
+                    <ul class="tab3">
+                      <h4><b> Förregistrering </b></h4>
+                      <li>Om du behöver förregistrera, klicka på knappen <b>Register</b> utan att fylla i något startnummer</li>
+                      <li>Den förregistrerade tiden kommer nu synas under <b>Pre-registrations</b></li>
+                      <li>Fyll i startnummer för den förregistrerade tiden</li>
+                      <li>Tryck på <b>save</b> för att spara tiden eller <b>clear</b> för att förkasta den förregisterade tiden</li>
+                      <li> <b>Observera</b>, du kan endast spara undan en förregistrerad tid åt gången</li>
+                    </ul>
+             </ul>
+           </p>
+
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> </hr>
+        <!-- END_LAP_RACE -->
+
+		<!-- RESULT_GENERATING -->
+
+			 <div id="resultgeneration">
+						<div class="container-fluid">
+						    <div class="row">
+						        <div class="col-lg-12">
+						            <h1>Resultatgenerering</h1>
+
+					<ul class="tab">
+					<h2>Konfiguration</h2>
+						<p>
+							För att själv definiera var namnfil, tidsregistreringar och resultat ska hämtas respektive genereras kan man använda sig av en konfigurationsfil. Det finns en default-fil i releasen med namn: <code>Config_DoNotMoveOrDeleteThis</code>. Genom att antingen ändra direkt i denna fil eller att skapa en egen config-fil enligt samma format kan man ändra konfigurationen och skapa flera konfigurationer. Konfigurationsfilen anges som parameter i terminalen enligt nedan:
+					    <code style="display: block;">> java -jar sorter.jar my_own_config_file</code>
+              <b>Observera</b> om ingen konfigurationsfil anges, används defaultvärden.
+            </p>
+					<h2>Maratonlopp</h2>
+						<p>
+              För att köra detta läge måste fältet <code>raceType</code> sättas till <code>marathon</code> i konfigurationsfilen.<hr />
+
+						    För att generera resultatfil körs sorterprogrammet via terminalen, <code>java -jar sorter-1.0.jar</code>. Detta skapar resultatfilerna. Om inget annat anges sparas dessa i samma directory som jar-filen körs ifrån. De namnges då:
+                <ul>
+                  <li><code>result.txt</code>,</li>
+                  <li><code>resultsorted.txt</code>,</li>
+                  <li><code>result.html_sorted.html</code>.</li>
+                </ul>
+							Resultatfiler genereras i startnummerordning med totaltider<br />
+              Med format:
+							<code style="display: block;">Start nbr; Name; Total time; Start time; Finish time</code>
+
+
+
+						</p>
+					<h2>Varvlopp</h2>
+						<p>
+              För att köra detta läge måste fältet <code>raceType</code> sättas till <code>lap</code> i konfigurationsfilen.<hr />
+
+						    För att generera resultatfil körs sorterprogrammet via terminalen, <code>java -jar sorter-1.0.jar</code>. Detta skapar resultatfilerna. Om inget annat anges sparas dessa i samma directory som jar-filen körs ifrån. De namnges då:
+                <ul>
+                  <li><code>result.txt</code>,</li>
+                  <li><code>resultsorted.txt</code>,</li>
+                  <li><code>result.html_sorted.html</code>.</li>
+                </ul>
+							Resultatfiler genereras i startnummerordning med totaltider (och varvtider). <br />
+              Med format:
+							<code style="display: block;">Start nbr; Name; #Lap; Total time; Lap times; ... Start time; Lap; ... Finish time</code>
+
+						</p>
+
+		<!-- END_RESULT_GENERATING -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

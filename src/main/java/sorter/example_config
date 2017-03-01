@@ -1,0 +1,28 @@
+### Congifuration file for the test race to be performed Friday 3/3 2017
+### to use default values - begin the appropriate row with <#>
+### e.g to default minTimeLimit write "#minTimeLimit=..."
+
+
+#raceType - choose between 'marathon' and 'lap'
+raceType=marathon
+
+#nameFilePath - specify the relative path of the participant name file.
+nameFilePath=./participants.txt
+
+#timeFilesDir - specify the relative path to the directory containing the registered times.
+timeFilesDir=./
+
+#timeFileNames - specify the names of specific files to scan for times.
+#timeFileNames=finish_2;start_1
+
+#resultPath - specify the relative path of where the result file should be generated.
+resultPath=./result
+
+#minTimeLimit - specify the minimal reasonable time of a race in milliseconds.
+minTimeLimit=20000
+
+#minLapLimit - specify the minimal reasonable time of a lap in milliseconds. 
+minLapLimit=34098
+
+
+

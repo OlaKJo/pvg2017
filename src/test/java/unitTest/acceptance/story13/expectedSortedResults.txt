@@ -1,0 +1,9 @@
+SENIOR
+Plac; StartNumber; Name; #Lap; Total time; Lap time 1; Lap time 2; Lap time 3
+1; 1; Anders Asson; 3; 01.23.34; 00.30.00; 00.30.00; 00.23.34
+2; 2; Bengt Bsson; 2; 01.15.16; 00.21.00; 00.54.16; 
+JUNIOR
+Plac; StartNumber; Name; #Lap; Total time; Lap time 1; Lap time 2
+1; 101; Chris Csson; 2; 00.42.00; 00.22.00; 00.20.00
+2; 102; David Dsson; 2; 00.43.00; 00.23.00; 00.20.00
+3; 103; Erik Esson; 1; 00.24.00; 00.24.00; 

@@ -1,0 +1,10 @@
+Start nbr; Name; Total time; Start time; Finish time
+1; Anders Asson; 00.00.27; 11.24.38; 11.25.05
+2; Bengt Bsson; 00.00.24; 11.24.39; 11.25.03
+3; Chris Csson; 00.00.24; 11.24.40; 11.25.04
+4; David Dsson; 00.00.25; 11.24.41; 11.25.06
+5; Erik Esson; 00.00.28; 11.24.43; 11.25.11
+Non-existing start numbers
+StartNumber; Time; Time type
+33; Name missing?; 00.00.22; 11.24.47; 11.25.09
+77; Name missing?; --.--.--; Start?; 11.25.14
